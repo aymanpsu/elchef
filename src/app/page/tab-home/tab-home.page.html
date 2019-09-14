@@ -1,0 +1,172 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content common-parallax fullscreen [scrollEvents]="true">
+  <div padding class="wrap-gallery-list">
+    <h2 no-margin class="uppercase fs-12 mgb-5">Popular</h2>
+    <div class="top-slide pdb-40">
+      <ion-slides [options]="slideOpts" class="parallax-obj">
+        <ion-slide class="">
+          <div text-left (click)="viewImg('lemon2.png')" class="wrap-slide">
+            <div class="view-thumb shadow-2">
+              <img src="assets/images/lemon18.jpg">
+            </div>
+            <h2 no-margin class="fs-14 pdt-10 fw-600 txt1 ellipsis">Butter Chicken</h2>
+            <p no-margin class="fs-12 txt2 ellipsis">353 Cal – 1 Hour</p>
+          </div>
+        </ion-slide>
+        <ion-slide class="">
+          <div text-left (click)="viewImg('lemon4.png')" class="wrap-slide">
+            <div class="view-thumb shadow-2">
+              <img src="assets/images/lemon4.png">
+            </div>
+            <h2 no-margin class="fs-14 pdt-10 fw-600 txt1 ellipsis">Tabbouleh</h2>
+            <p no-margin class="fs-12 txt2 ellipsis">162 Cal – 30 min</p>
+          </div>
+        </ion-slide>
+        <ion-slide class="">
+          <div text-left (click)="viewImg('lemon6.png')" class="wrap-slide">
+            <div class="view-thumb shadow-2">
+              <img src="assets/images/lemon6.png">
+            </div>
+            <h2 no-margin class="fs-14 pdt-10 fw-600 txt1 ellipsis">Shish Tawook</h2>
+            <p no-margin class="fs-12 txt2 ellipsis">284 Cal - 35 min</p>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </div>
+    <h2 no-margin class="uppercase fs-12 mgb-5">recommended</h2>
+    <ion-row no-padding routerLink="/tabs/tab-home/respice" routerDirection="forward" class="not-clcickable">
+      <ion-col size="3">
+        <div class="thumb">
+          <img src="assets/images/lemon8.png">
+        </div>
+      </ion-col>
+      <ion-col size="9" class="info">
+        <div class="">
+          <h4 no-margin class="pdb-5 fs-14 fw-600 txt1 ellipsis">Pasta</h4>
+          <p no-margin class="pdt-2 fs-12 txt3 ellipsis">414 Cal - 30 min</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding (click)="viewImg('lemon3.png')">
+      <ion-col size="3">
+        <div class="thumb">
+          <img src="assets/images/lemon3.png">
+        </div>
+      </ion-col>
+      <ion-col size="9" class="info">
+        <div class="">
+          <h4 no-margin class="pdb-5 fs-14 fw-600 txt1 ellipsis">Hummus</h4>
+          <p no-margin class="pdt-2 fs-12 txt3 ellipsis">155 Cal - 10 min</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding (click)="viewImg('lemon4.png')">
+      <ion-col size="3">
+        <div class="thumb">
+          <img src="assets/images/lemon14.jpg">
+        </div>
+      </ion-col>
+      <ion-col size="9" class="info">
+        <div class="">
+          <h4 no-margin class="pdb-5 fs-14 fw-600 txt1 ellipsis">Carbonara</h4>
+          <p no-margin class="pdt-2 fs-12 txt3 ellipsis">308 Cal - 30 min</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding (click)="viewImg('lemon5.png')">
+      <ion-col size="3">
+        <div class="thumb">
+          <img src="assets/images/lemon13.jpg">
+        </div>
+      </ion-col>
+      <ion-col size="9" class="info">
+        <div class="">
+          <h4 no-margin class="pdb-5 fs-14 fw-600 txt1 ellipsis">Pizza</h4>
+          <p no-margin class="pdt-2 fs-12 txt3 ellipsis">360 Cal - 35 min</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding (click)="viewImg('lemon6.png')">
+      <ion-col size="3">
+        <div class="thumb">
+          <img src="assets/images/lemon6.png">
+        </div>
+      </ion-col>
+      <ion-col size="9" class="info">
+        <div class="">
+          <h4 no-margin class="pdb-5 fs-14 fw-600 txt1 ellipsis">Shish Tawook</h4>
+          <p no-margin class="pdt-2 fs-12 txt3 ellipsis">284 Cal - 35 min</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding (click)="viewImg('lemon7.png')">
+      <ion-col size="3">
+        <div class="thumb">
+          <img src="assets/images/lemon7.png">
+        </div>
+      </ion-col>
+      <ion-col size="9" class="info">
+        <div class="">
+          <h4 no-margin class="pdb-5 fs-14 fw-600 txt1 ellipsis">Fried Chicken</h4>
+          <p no-margin class="pdt-2 fs-12 txt3 ellipsis">284 Cal – 20 min</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding (click)="viewImg('lemon8.png')">
+      <ion-col size="3">
+        <div class="thumb">
+          <img src="assets/images/lemon8.png">
+        </div>
+      </ion-col>
+      <ion-col size="9" class="info">
+        <div class="">
+          <h4 no-margin class="pdb-5 fs-14 fw-600 txt1 ellipsis">Pasta</h4>
+          <p no-margin class="pdt-2 fs-12 txt3 ellipsis">414 Cal – 30 min</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding (click)="viewImg('lemon9.png')">
+      <ion-col size="3">
+        <div class="thumb">
+          <img src="assets/images/lemon69.jpg">
+        </div>
+      </ion-col>
+      <ion-col size="9" class="info">
+        <div class="">
+          <h4 no-margin class="pdb-5 fs-14 fw-600 txt1 ellipsis">Apple Pie</h4>
+          <p no-margin class="pdt-2 fs-12 txt3 ellipsis">345 Cal – 1 Hour</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding (click)="viewImg('lemon10.png')">
+      <ion-col size="3">
+        <div class="thumb">
+          <img src="assets/images/lemon100.jpg">
+        </div>
+      </ion-col>
+      <ion-col size="9" class="info">
+        <div class="">
+          <h4 no-margin class="pdb-5 fs-14 fw-600 txt1 ellipsis">Biryani</h4>
+          <p no-margin class="pdt-2 fs-12 txt3 ellipsis">333 Cal – 1 hour </p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding routerLink="/tabs/tab-home/respice" routerDirection="forward">
+      <ion-col size="3">
+        <div class="thumb">
+          <img src="assets/images/lemon1.png">
+        </div>
+      </ion-col>
+      <ion-col size="9" class="info">
+        <div class="">
+          <h4 no-margin class="pdb-5 fs-14 fw-600 txt1 ellipsis">Falafel</h4>
+          <p no-margin class="pdt-2 fs-12 txt3 ellipsis">499 Cal – 50 min</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

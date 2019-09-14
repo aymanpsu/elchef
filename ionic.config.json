@@ -1,0 +1,8 @@
+{
+  "name": "lemon",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}
