@@ -6,6 +6,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { FirebaseAuthenticationProvider } from '../../provider/firebase/firebase-authentication';
 
 import { catchError } from 'rxjs/operators';
+import { FullScreenImage } from '@ionic-native/full-screen-image';
 
 @Component({
 	selector: 'app-login',
@@ -33,7 +34,6 @@ export class LoginPage implements OnInit {
 
 
 	ngOnInit() {
-		
 	}
 
 
